@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+    <!DOCTYPE hibernate-configuration PUBLIC  
+              "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+              "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+      
+    <hibernate-configuration>  
+      
+        <session-factory>  
+            <property name="hbm2ddl.auto">update</property>  
+            <property name="dialect">org.hibernate.dialect.DB2Dialect</property>  
+            <property name="connection.url">jdbc:mysql://localhost/americanstairsdb?useSSL=false</property>  
+            <property name="connection.username">roopa</property>  
+            <property name="connection.password">rup12jay</property>  
+            <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
+            <property name="show_sql">true</property>
+            
+            <!-- JDBC connection pool (use the built-in) -->
+			<property name="connection.pool_size">1</property>
+
+			<!-- SQL dialect -->
+			<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping resource="user.hbm.xml"/>  
+        </session-factory>  
+      
+    </hibernate-configuration>  

@@ -1,0 +1,8 @@
+List all users:   (use GET http method)
+           http://localhost:8080/american-stairs-API/webapi/users
+                      
+List one user:   (use GET http method)
+			http://localhost:8080/american-stairs-API/webapi/users/1
+			
+Update a user:   (use PUT http method)
+			http://localhost:8080/american-stairs-API/webapi/users/1
